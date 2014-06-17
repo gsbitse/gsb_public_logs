@@ -85,7 +85,7 @@ sh ${workspace_dir}/gsb_public_logs/logs.sh > ${workspace_dir}/gsb_public_logs/l
 cd ${workspace_dir}/gsb_public_logs
 
 git add log_out.txt
-git commit -m 'test'
+git commit -m 'Logging complete'
 git push
 
 
