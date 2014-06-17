@@ -9,7 +9,7 @@ function gitlog() {
 	echo "$1"
 	echo "*-----------------------------------------*"
 	echo "        "
-	git log --all --pretty=format:"https://github.com/gsbitse/$1/commit/%h%n- committer: %cn author: %an, %ar %n%s" --stat --color --since=20.days
+	git log --all --pretty=format:"https://github.com/gsbitse/$1/commit/%h%n- committer: %cn author: %an, %ar %n%s" --stat --color --since=1000.days
 }
 
 function messageout() {
