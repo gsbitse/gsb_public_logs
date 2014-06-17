@@ -80,4 +80,11 @@ rm -rf gsb_public_logs
 git clone git@github.com:gsbitse/gsb_public_logs.git
 
 cd ${workspace_dir}/gsbpublic
-sh ../gsb_public_logs/logs.sh > log_out.txt
+sh ../gsb_public_logs/logs.sh > ${workspace_dir}/gsb_public_logs/log_out.txt
+
+git add log_out.txt
+git commit -m 'test'
+git push
+
+
+
