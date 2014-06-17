@@ -37,7 +37,7 @@ function getlogs() {
 
 messageout "!!! status: logs.sh started..."
 
-cd gsb_public/profiles/gsb_public/
+cd docroot/profiles/gsb_public
 
 cd modules/custom
 getlogs
