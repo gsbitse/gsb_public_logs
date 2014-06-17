@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 
 # run this script from the build directory
 
@@ -38,7 +38,7 @@ function getlogs() {
 
 messageout "!!! status: logs.sh started..."
 
-cd gsb_public/profiles/gsb_public/
+cd docroot/profiles/gsb_public
 
 cd modules/custom
 getlogs $1
