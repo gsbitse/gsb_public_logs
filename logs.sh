@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 # run this script from the build directory
 
@@ -9,7 +9,8 @@ function gitlog() {
 	echo "$1"
 	echo "*-----------------------------------------*"
 	echo "        "
-	git log --all --pretty=format:"https://github.com/gsbitse/$1/commit/%h%n- committer: %cn author: %an, %ar %n%s" --stat --color --since=1000.days
+	# git log --pretty=format:"%h - %an, %ar : %s" --committer "Greg Mercer" --stat --color --since=1.days
+	git log --all --pretty=format:"https://github.com/gsbitse/$1/commit/%h%n- committer: %cn author: %an, %ar %n%s" --stat --color --since=$2.days
 }
 
 function messageout() {
@@ -29,7 +30,7 @@ function getlogs() {
       :   
     else
       cd "$i"   
-      gitlog "$i"
+      gitlog "$i" "$1"
       cd ..
     fi  
   done  
@@ -37,17 +38,15 @@ function getlogs() {
 
 messageout "!!! status: logs.sh started..."
 
-cd docroot/profiles/gsb_public
+cd gsb_public/profiles/gsb_public/
 
 cd modules/custom
-getlogs
+getlogs $1
 
 cd features
-getlogs
+getlogs $1
 
 cd ../../../themes
-getlogs
+getlogs $1
 
 messageout "!!! status: logs.sh completed."
-
-
