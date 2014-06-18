@@ -9,7 +9,7 @@ distro_url="https://github.com/gsbitse/gsb-distro.git"
 # save the workspace root directory
 
 workspace_dir=$PWD
-branch="master"
+branch="release-3.12"
 
 ############################################
 # check if the gsb-distro branch exists
