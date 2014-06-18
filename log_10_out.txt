@@ -4,184 +4,19 @@
         
         
 *-----------------------------------------*
-./gsb_academic_year
-*-----------------------------------------*
-        
-        
-        
-*-----------------------------------------*
-./gsb_public_custom_blocks
-*-----------------------------------------*
-        
-https://github.com/gsbitse/./gsb_public_custom_blocks/commit/1ce681c
-- committer: Roopesh Naik author: Roopesh Naik, 35 hours ago 
-WP-3800 update drop values
- plugins/content_types/library_contact_form.inc | 4 [32m++[m[31m--[m
- 1 file changed, 2 insertions(+), 2 deletions(-)
-        
-        
-*-----------------------------------------*
-./gsb_section_autoconfig
-*-----------------------------------------*
-        
-        
-        
-*-----------------------------------------*
-./gsb_field_formatter
-*-----------------------------------------*
-        
-        
-        
-*-----------------------------------------*
-./gsb_panopoly_magic_customization
-*-----------------------------------------*
-        
-        
-        
-*-----------------------------------------*
 ./pathauto_title_alias
 *-----------------------------------------*
         
         
         
 *-----------------------------------------*
-./gsb_field_authors
-*-----------------------------------------*
-        
-        
-        
-*-----------------------------------------*
-./gsb_auto_upload_file
-*-----------------------------------------*
-        
-https://github.com/gsbitse/./gsb_auto_upload_file/commit/67649bf
-- committer: Alexei Gorobets author: Alexei Gorobets, 6 days ago 
-WP-3778: Auto-upload files only if there are no Javascript validation errors.
- js/gsb_auto_upload_file.js | 12 [32m++++++++[m[31m----[m
- 1 file changed, 8 insertions(+), 4 deletions(-)
-        
-        
-*-----------------------------------------*
-./gsb_addthis_customization
-*-----------------------------------------*
-        
-        
-        
-*-----------------------------------------*
-./feature_flag
-*-----------------------------------------*
-        
-        
-        
-*-----------------------------------------*
-./gsb_panels_ipe_overrides
-*-----------------------------------------*
-        
-        
-        
-*-----------------------------------------*
-./gsb_advanced_menu_customization
-*-----------------------------------------*
-        
-        
-        
-*-----------------------------------------*
-./gsb_fpp_customization
-*-----------------------------------------*
-        
-https://github.com/gsbitse/./gsb_fpp_customization/commit/031436b
-- committer: Adam Moore author: Alexei Gorobets, 16 hours ago 
-WP-3831: Use modal dismiss as a fallback and click Cancel button if it's there. This would preserve back to Add Content functionality.
- js/gsb_fpp_customization.js | 8 [32m++++++[m[31m--[m
- 1 file changed, 6 insertions(+), 2 deletions(-)
-
-https://github.com/gsbitse/./gsb_fpp_customization/commit/bde5b91
-- committer: Adam Moore author: Alexei Gorobets, 17 hours ago 
-WP-3831: Call Ctools modal dismiss to close overlay.
- js/gsb_fpp_customization.js | 3 [32m++[m[31m-[m
- 1 file changed, 2 insertions(+), 1 deletion(-)
-
-https://github.com/gsbitse/./gsb_fpp_customization/commit/1523e3e
-- committer: Alexei Gorobets author: Alexei Gorobets, 16 hours ago 
-WP-3831: Use modal dismiss as a fallback and click Cancel button if it's there. This would preserve back to Add Content functionality.
- js/gsb_fpp_customization.js | 8 [32m++++++[m[31m--[m
- 1 file changed, 6 insertions(+), 2 deletions(-)
-
-https://github.com/gsbitse/./gsb_fpp_customization/commit/ab90bf5
-- committer: Alexei Gorobets author: Alexei Gorobets, 17 hours ago 
-WP-3831: Call Ctools modal dismiss to close overlay.
- js/gsb_fpp_customization.js | 3 [32m++[m[31m-[m
- 1 file changed, 2 insertions(+), 1 deletion(-)
-
-https://github.com/gsbitse/./gsb_fpp_customization/commit/2310bb1
-- committer: Greg Mercer author: Greg Mercer, 7 days ago 
-WP-3713 Added hook for panels_ipe_pane_links_alter to remove edit or delete buttons on panel panes of user doesn't have access on image_cta
- gsb_fpp_customization.module | 56 [32m++++++++++++++++++++++++++++++++++++++++++++[m
- 1 file changed, 56 insertions(+)
-        
-        
-*-----------------------------------------*
-./gsb_tokens
-*-----------------------------------------*
-        
-        
-        
-*-----------------------------------------*
-./gsb_node_modal
-*-----------------------------------------*
-        
-        
-        
-*-----------------------------------------*
-./zurb_responsive_tables
-*-----------------------------------------*
-        
-        
-        
-*-----------------------------------------*
-./gsb_connecting_link
-*-----------------------------------------*
-        
-        
-        
-*-----------------------------------------*
-./gsb_login_destination
-*-----------------------------------------*
-        
-        
-        
-*-----------------------------------------*
-./gsb_faculty_role
-*-----------------------------------------*
-        
-        
-        
-*-----------------------------------------*
-./gsb_custom_section_title
+./gsb_fpp_stock_content
 *-----------------------------------------*
         
         
         
 *-----------------------------------------*
 ./gsb_agenda
-*-----------------------------------------*
-        
-        
-        
-*-----------------------------------------*
-./gsb_az_filter
-*-----------------------------------------*
-        
-        
-        
-*-----------------------------------------*
-./gsb_trim
-*-----------------------------------------*
-        
-        
-        
-*-----------------------------------------*
-./gsb_fpp_stock_content
 *-----------------------------------------*
         
         
@@ -198,31 +33,48 @@ Removed start and end watchdog calls
         
         
 *-----------------------------------------*
-./gsb_panels_pages
+./gsb_trim
 *-----------------------------------------*
         
         
         
 *-----------------------------------------*
-./gsb_workbench_save_and_publish
+./gsb_auto_upload_file
+*-----------------------------------------*
+        
+https://github.com/gsbitse/./gsb_auto_upload_file/commit/67649bf
+- committer: Alexei Gorobets author: Alexei Gorobets, 6 days ago 
+WP-3778: Auto-upload files only if there are no Javascript validation errors.
+ js/gsb_auto_upload_file.js | 12 [32m++++++++[m[31m----[m
+ 1 file changed, 8 insertions(+), 4 deletions(-)
+        
+        
+*-----------------------------------------*
+./gsb_custom_section_title
 *-----------------------------------------*
         
         
         
 *-----------------------------------------*
-./gsb_migrate
+./gsb_section_autoconfig
 *-----------------------------------------*
         
         
         
 *-----------------------------------------*
-./gsb_cmis_api
+./gsb_field_formatter
 *-----------------------------------------*
         
         
         
 *-----------------------------------------*
-./simplesaml_auth
+./gsb_login_destination
+*-----------------------------------------*
+        
+        
+        
+*-----------------------------------------*
+./gsb_az_filter
 *-----------------------------------------*
         
         
@@ -240,61 +92,161 @@ Removed start and end watchdog calls
         
         
 *-----------------------------------------*
+./gsb_cmis_api
+*-----------------------------------------*
+        
+        
+        
+*-----------------------------------------*
+./gsb_panopoly_magic_customization
+*-----------------------------------------*
+        
+        
+        
+*-----------------------------------------*
+./gsb_public_custom_blocks
+*-----------------------------------------*
+        
+https://github.com/gsbitse/./gsb_public_custom_blocks/commit/1ce681c
+- committer: Roopesh Naik author: Roopesh Naik, 35 hours ago 
+WP-3800 update drop values
+ plugins/content_types/library_contact_form.inc | 4 [32m++[m[31m--[m
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+        
+        
+*-----------------------------------------*
+./feature_flag
+*-----------------------------------------*
+        
+        
+        
+*-----------------------------------------*
+./zurb_responsive_tables
+*-----------------------------------------*
+        
+        
+        
+*-----------------------------------------*
+./gsb_field_authors
+*-----------------------------------------*
+        
+        
+        
+*-----------------------------------------*
 ./gsb_media_center
 *-----------------------------------------*
         
         
         
 *-----------------------------------------*
-./gsb_feature_links_fpp
+./gsb_panels_ipe_overrides
 *-----------------------------------------*
         
         
         
 *-----------------------------------------*
-./gsb_feature_working_paper_display
+./gsb_academic_year
 *-----------------------------------------*
         
         
         
 *-----------------------------------------*
-./gsb_feature_people_display
+./gsb_connecting_link
 *-----------------------------------------*
         
         
         
 *-----------------------------------------*
-./gsb_feature_phd_candidate_display
+./gsb_addthis_customization
 *-----------------------------------------*
         
         
         
 *-----------------------------------------*
-./gsb_feature_quote_fpp
+./gsb_panels_pages
 *-----------------------------------------*
         
         
         
 *-----------------------------------------*
-./gsb_feature_course_display
+./gsb_tokens
 *-----------------------------------------*
         
         
         
 *-----------------------------------------*
-./gsb_feature_page_ct
+./gsb_advanced_menu_customization
 *-----------------------------------------*
         
         
         
 *-----------------------------------------*
-./gsb_feature_video
+./gsb_migrate
 *-----------------------------------------*
         
         
         
 *-----------------------------------------*
-./gsb_feature_event_display
+./gsb_workbench_save_and_publish
+*-----------------------------------------*
+        
+        
+        
+*-----------------------------------------*
+./gsb_faculty_role
+*-----------------------------------------*
+        
+        
+        
+*-----------------------------------------*
+./gsb_node_modal
+*-----------------------------------------*
+        
+        
+        
+*-----------------------------------------*
+./gsb_fpp_customization
+*-----------------------------------------*
+        
+https://github.com/gsbitse/./gsb_fpp_customization/commit/031436b
+- committer: Adam Moore author: Alexei Gorobets, 16 hours ago 
+WP-3831: Use modal dismiss as a fallback and click Cancel button if it's there. This would preserve back to Add Content functionality.
+ js/gsb_fpp_customization.js | 8 [32m++++++[m[31m--[m
+ 1 file changed, 6 insertions(+), 2 deletions(-)
+
+https://github.com/gsbitse/./gsb_fpp_customization/commit/bde5b91
+- committer: Adam Moore author: Alexei Gorobets, 18 hours ago 
+WP-3831: Call Ctools modal dismiss to close overlay.
+ js/gsb_fpp_customization.js | 3 [32m++[m[31m-[m
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+https://github.com/gsbitse/./gsb_fpp_customization/commit/1523e3e
+- committer: Alexei Gorobets author: Alexei Gorobets, 16 hours ago 
+WP-3831: Use modal dismiss as a fallback and click Cancel button if it's there. This would preserve back to Add Content functionality.
+ js/gsb_fpp_customization.js | 8 [32m++++++[m[31m--[m
+ 1 file changed, 6 insertions(+), 2 deletions(-)
+
+https://github.com/gsbitse/./gsb_fpp_customization/commit/ab90bf5
+- committer: Alexei Gorobets author: Alexei Gorobets, 18 hours ago 
+WP-3831: Call Ctools modal dismiss to close overlay.
+ js/gsb_fpp_customization.js | 3 [32m++[m[31m-[m
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+https://github.com/gsbitse/./gsb_fpp_customization/commit/2310bb1
+- committer: Greg Mercer author: Greg Mercer, 7 days ago 
+WP-3713 Added hook for panels_ipe_pane_links_alter to remove edit or delete buttons on panel panes of user doesn't have access on image_cta
+ gsb_fpp_customization.module | 56 [32m++++++++++++++++++++++++++++++++++++++++++++[m
+ 1 file changed, 56 insertions(+)
+        
+        
+*-----------------------------------------*
+./simplesaml_auth
+*-----------------------------------------*
+        
+        
+        
+*-----------------------------------------*
+./gsb_feature_media_item_ct
 *-----------------------------------------*
         
         
@@ -306,27 +258,32 @@ Removed start and end watchdog calls
         
         
 *-----------------------------------------*
-./gsb_feature_google_analytics_settings
+./gsb_feature_existing_node_fpp
 *-----------------------------------------*
         
         
         
 *-----------------------------------------*
-./gsb_feature_academic_calendar_ct
+./gsb_feature_staff_ct
 *-----------------------------------------*
         
         
         
 *-----------------------------------------*
-./gsb_feature_webform_ct
+./gsb_feature_rss_feeds
 *-----------------------------------------*
         
         
         
 *-----------------------------------------*
-./gsb_feature_week_in_the_life_ct
+./gsb_feature_week_in_the_life_display
 *-----------------------------------------*
         
+https://github.com/gsbitse/./gsb_feature_week_in_the_life_display/commit/ca044b1
+- committer: Alexei Gorobets author: Alexei Gorobets, 18 hours ago 
+WP-3752: Add WITL default local task in WITL view to fake a page title for breadcrumbs_by_path to consume.
+ gsb_feature_week_in_the_life_display.views_default.inc | 6 [32m++++++[m
+ 1 file changed, 6 insertions(+)
         
         
 *-----------------------------------------*
@@ -334,7 +291,7 @@ Removed start and end watchdog calls
 *-----------------------------------------*
         
 https://github.com/gsbitse/./gsb_feature_homepage_cta_fpp/commit/55d40f0
-- committer: Greg Mercer (GBear) author: Greg Mercer (GBear), 26 hours ago 
+- committer: Greg Mercer (GBear) author: Greg Mercer (GBear), 27 hours ago 
 WP-3808 Small help text change
  gsb_feature_homepage_cta_fpp.features.field_instance.inc | 4 [32m++[m[31m--[m
  1 file changed, 2 insertions(+), 2 deletions(-)
@@ -354,6 +311,202 @@ https://github.com/gsbitse/./gsb_feature_homepage_cta_fpp/commit/9cf0f84
 WP-3740 Added help text
  gsb_feature_homepage_cta_fpp.module | 8 [32m+++++++[m[31m-[m
  1 file changed, 7 insertions(+), 1 deletion(-)
+        
+        
+*-----------------------------------------*
+./gsb_feature_accordion
+*-----------------------------------------*
+        
+        
+        
+*-----------------------------------------*
+./gsb_feature_people_fpp
+*-----------------------------------------*
+        
+        
+        
+*-----------------------------------------*
+./gsb_feature_simplesaml
+*-----------------------------------------*
+        
+        
+        
+*-----------------------------------------*
+./gsb_feature_publication_ct
+*-----------------------------------------*
+        
+        
+        
+*-----------------------------------------*
+./gsb_feature_file_types
+*-----------------------------------------*
+        
+        
+        
+*-----------------------------------------*
+./gsb_feature_text_fpp
+*-----------------------------------------*
+        
+        
+        
+*-----------------------------------------*
+./gsb_feature_social_feed
+*-----------------------------------------*
+        
+        
+        
+*-----------------------------------------*
+./gsb_feature_image_styles
+*-----------------------------------------*
+        
+        
+        
+*-----------------------------------------*
+./gsb_feature_image_cta_fpp
+*-----------------------------------------*
+        
+https://github.com/gsbitse/./gsb_feature_image_cta_fpp/commit/eecc7ea
+- committer: Adam Moore author: Adam Moore, 18 hours ago 
+Forgot to fix help text in instance.
+ gsb_feature_image_cta_fpp.features.field_instance.inc | 2 [32m+[m[31m-[m
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+https://github.com/gsbitse/./gsb_feature_image_cta_fpp/commit/efee934
+- committer: Greg Mercer (GBear) author: Greg Mercer (GBear), 27 hours ago 
+WP-3820 Small help text changes
+ gsb_feature_image_cta_fpp.features.field_instance.inc | 2 [32m+[m[31m-[m
+ gsb_feature_image_cta_fpp.module                      | 2 [32m+[m[31m-[m
+ 2 files changed, 2 insertions(+), 2 deletions(-)
+
+https://github.com/gsbitse/./gsb_feature_image_cta_fpp/commit/796a104
+- committer: Meghan Palagyi author: Meghan Palagyi, 5 days ago 
+WP-3736: update the image cta display.
+ gsb_feature_image_cta_fpp.ds.inc                   | 31 [32m+++++++++++++[m[31m---------[m
+ ...ature_image_cta_fpp.features.field_instance.inc | 18 [32m+++[m[31m----------[m
+ gsb_feature_image_cta_fpp.field_group.inc          |  1 [31m-[m
+ gsb_feature_image_cta_fpp.strongarm.inc            |  5 [32m+++[m[31m-[m
+ 4 files changed, 27 insertions(+), 28 deletions(-)
+
+https://github.com/gsbitse/./gsb_feature_image_cta_fpp/commit/c31d4bd
+- committer: Greg Mercer (GBear) author: Greg Mercer (GBear), 9 days ago 
+WP-3713 Added help text for the image cta
+ gsb_feature_image_cta_fpp.module | 23 [32m+++++++++++++++++++++++[m
+ 1 file changed, 23 insertions(+)
+
+https://github.com/gsbitse/./gsb_feature_image_cta_fpp/commit/481ea7d
+- committer: Greg Mercer (GBear) author: Greg Mercer (GBear), 9 days ago 
+WP-3713 Field-related changes for image cta
+ gsb_feature_image_cta_fpp.features.field_instance.inc | 18 [32m+++++++++[m[31m---------[m
+ gsb_feature_image_cta_fpp.module                      |  9 [31m---------[m
+ gsb_feature_image_cta_fpp.strongarm.inc               |  2 [32m+[m[31m-[m
+ 3 files changed, 10 insertions(+), 19 deletions(-)
+        
+        
+*-----------------------------------------*
+./gsb_feature_people_display
+*-----------------------------------------*
+        
+        
+        
+*-----------------------------------------*
+./gsb_feature_google_analytics_settings
+*-----------------------------------------*
+        
+        
+        
+*-----------------------------------------*
+./gsb_feature_gsa_search
+*-----------------------------------------*
+        
+        
+        
+*-----------------------------------------*
+./gsb_feature_course_display
+*-----------------------------------------*
+        
+        
+        
+*-----------------------------------------*
+./gsb_feature_page_ct
+*-----------------------------------------*
+        
+        
+        
+*-----------------------------------------*
+./gsb_feature_links_fpp
+*-----------------------------------------*
+        
+        
+        
+*-----------------------------------------*
+./gsb_feature_case_display
+*-----------------------------------------*
+        
+        
+        
+*-----------------------------------------*
+./gsb_feature_quote_fpp
+*-----------------------------------------*
+        
+        
+        
+*-----------------------------------------*
+./gsb_feature_featured_person_fpp
+*-----------------------------------------*
+        
+        
+        
+*-----------------------------------------*
+./gsb_feature_video
+*-----------------------------------------*
+        
+        
+        
+*-----------------------------------------*
+./gsb_feature_faculty_ct
+*-----------------------------------------*
+        
+        
+        
+*-----------------------------------------*
+./gsb_feature_business_website_ct
+*-----------------------------------------*
+        
+        
+        
+*-----------------------------------------*
+./gsb_feature_club_ct
+*-----------------------------------------*
+        
+        
+        
+*-----------------------------------------*
+./gsb_feature_event_display
+*-----------------------------------------*
+        
+        
+        
+*-----------------------------------------*
+./gsb_feature_faculty_display
+*-----------------------------------------*
+        
+https://github.com/gsbitse/./gsb_feature_faculty_display/commit/06081e6
+- committer: Roopesh Naik author: Roopesh Naik, 7 days ago 
+WP-3743 add help text for faculty by criteria fpp
+ gsb_feature_faculty_display.module | 8 [32m+++++++[m[31m-[m
+ 1 file changed, 7 insertions(+), 1 deletion(-)
+        
+        
+*-----------------------------------------*
+./gsb_feature_book_display
+*-----------------------------------------*
+        
+        
+        
+*-----------------------------------------*
+./gsb_feature_webform_ct
+*-----------------------------------------*
+        
         
         
 *-----------------------------------------*
@@ -441,190 +594,6 @@ WP-3732: Update Slideshow FPP View mode and code to reflect new fields.
         
         
 *-----------------------------------------*
-./gsb_feature_case_display
-*-----------------------------------------*
-        
-        
-        
-*-----------------------------------------*
-./gsb_feature_existing_node_fpp
-*-----------------------------------------*
-        
-        
-        
-*-----------------------------------------*
-./gsb_feature_publication_display
-*-----------------------------------------*
-        
-        
-        
-*-----------------------------------------*
-./gsb_feature_house_ads_fpp
-*-----------------------------------------*
-        
-        
-        
-*-----------------------------------------*
-./gsb_feature_business_website_display
-*-----------------------------------------*
-        
-        
-        
-*-----------------------------------------*
-./gsb_feature_social_feed
-*-----------------------------------------*
-        
-        
-        
-*-----------------------------------------*
-./gsb_feature_image_styles
-*-----------------------------------------*
-        
-        
-        
-*-----------------------------------------*
-./gsb_feature_publication_ct
-*-----------------------------------------*
-        
-        
-        
-*-----------------------------------------*
-./gsb_feature_event_ct
-*-----------------------------------------*
-        
-        
-        
-*-----------------------------------------*
-./gsb_feature_rss_feeds
-*-----------------------------------------*
-        
-        
-        
-*-----------------------------------------*
-./gsb_feature_accordion
-*-----------------------------------------*
-        
-        
-        
-*-----------------------------------------*
-./gsb_feature_msx_fellows_display
-*-----------------------------------------*
-        
-        
-        
-*-----------------------------------------*
-./gsb_feature_simplesaml
-*-----------------------------------------*
-        
-        
-        
-*-----------------------------------------*
-./gsb_feature_cta
-*-----------------------------------------*
-        
-        
-        
-*-----------------------------------------*
-./gsb_feature_file_types
-*-----------------------------------------*
-        
-        
-        
-*-----------------------------------------*
-./gsb_feature_image_fpp
-*-----------------------------------------*
-        
-        
-        
-*-----------------------------------------*
-./gsb_feature_diptych_fpp
-*-----------------------------------------*
-        
-        
-        
-*-----------------------------------------*
-./gsb_feature_academic_calendar_display
-*-----------------------------------------*
-        
-        
-        
-*-----------------------------------------*
-./gsb_feature_workbench
-*-----------------------------------------*
-        
-        
-        
-*-----------------------------------------*
-./gsb_feature_msx_fellows_ct
-*-----------------------------------------*
-        
-        
-        
-*-----------------------------------------*
-./gsb_feature_faculty_display
-*-----------------------------------------*
-        
-https://github.com/gsbitse/./gsb_feature_faculty_display/commit/06081e6
-- committer: Roopesh Naik author: Roopesh Naik, 7 days ago 
-WP-3743 add help text for faculty by criteria fpp
- gsb_feature_faculty_display.module | 8 [32m+++++++[m[31m-[m
- 1 file changed, 7 insertions(+), 1 deletion(-)
-        
-        
-*-----------------------------------------*
-./gsb_feature_featured_person_fpp
-*-----------------------------------------*
-        
-        
-        
-*-----------------------------------------*
-./gsb_feature_toolbar
-*-----------------------------------------*
-        
-        
-        
-*-----------------------------------------*
-./gsb_feature_case_ct
-*-----------------------------------------*
-        
-https://github.com/gsbitse/./gsb_feature_case_ct/commit/06f730b
-- committer: Roopesh Naik author: Roopesh Naik, 7 days ago 
-WP-3768 add case# and author to search fields
- gsb_feature_case_ct.features.field_instance.inc | 3 [32m++[m[31m-[m
- 1 file changed, 2 insertions(+), 1 deletion(-)
-        
-        
-*-----------------------------------------*
-./gsb_feature_wysiwyg
-*-----------------------------------------*
-        
-        
-        
-*-----------------------------------------*
-./gsb_feature_media_item_ct
-*-----------------------------------------*
-        
-        
-        
-*-----------------------------------------*
-./gsb_feature_business_website_ct
-*-----------------------------------------*
-        
-        
-        
-*-----------------------------------------*
-./gsb_feature_spotlight
-*-----------------------------------------*
-        
-        
-        
-*-----------------------------------------*
-./gsb_feature_mega_menu
-*-----------------------------------------*
-        
-        
-        
-*-----------------------------------------*
 ./gsb_feature_base_fields
 *-----------------------------------------*
         
@@ -692,19 +661,37 @@ WP-3732: Hide labels on Slideshow FC fields.
         
         
 *-----------------------------------------*
-./gsb_feature_book_display
+./gsb_feature_publication_display
 *-----------------------------------------*
         
         
         
 *-----------------------------------------*
-./gsb_feature_people_fpp
+./gsb_feature_business_website_display
 *-----------------------------------------*
         
         
         
 *-----------------------------------------*
-./gsb_feature_course_ct
+./gsb_feature_diptych_fpp
+*-----------------------------------------*
+        
+        
+        
+*-----------------------------------------*
+./gsb_feature_msx_fellows_display
+*-----------------------------------------*
+        
+        
+        
+*-----------------------------------------*
+./gsb_feature_academic_calendar_ct
+*-----------------------------------------*
+        
+        
+        
+*-----------------------------------------*
+./gsb_feature_cta
 *-----------------------------------------*
         
         
@@ -716,19 +703,42 @@ WP-3732: Hide labels on Slideshow FC fields.
         
         
 *-----------------------------------------*
-./gsb_feature_working_paper_ct
+./gsb_feature_event_ct
 *-----------------------------------------*
         
         
         
 *-----------------------------------------*
-./gsb_feature_faculty_ct
+./gsb_feature_wysiwyg
 *-----------------------------------------*
         
         
         
 *-----------------------------------------*
-./gsb_feature_staff_ct
+./gsb_feature_case_ct
+*-----------------------------------------*
+        
+https://github.com/gsbitse/./gsb_feature_case_ct/commit/06f730b
+- committer: Roopesh Naik author: Roopesh Naik, 7 days ago 
+WP-3768 add case# and author to search fields
+ gsb_feature_case_ct.features.field_instance.inc | 3 [32m++[m[31m-[m
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+        
+        
+*-----------------------------------------*
+./gsb_feature_toolbar
+*-----------------------------------------*
+        
+        
+        
+*-----------------------------------------*
+./gsb_feature_spotlight
+*-----------------------------------------*
+        
+        
+        
+*-----------------------------------------*
+./gsb_feature_course_ct
 *-----------------------------------------*
         
         
@@ -740,77 +750,73 @@ WP-3732: Hide labels on Slideshow FC fields.
         
         
 *-----------------------------------------*
-./gsb_feature_text_fpp
-*-----------------------------------------*
-        
-        
-        
-*-----------------------------------------*
-./gsb_feature_image_cta_fpp
-*-----------------------------------------*
-        
-https://github.com/gsbitse/./gsb_feature_image_cta_fpp/commit/eecc7ea
-- committer: Adam Moore author: Adam Moore, 17 hours ago 
-Forgot to fix help text in instance.
- gsb_feature_image_cta_fpp.features.field_instance.inc | 2 [32m+[m[31m-[m
- 1 file changed, 1 insertion(+), 1 deletion(-)
-
-https://github.com/gsbitse/./gsb_feature_image_cta_fpp/commit/efee934
-- committer: Greg Mercer (GBear) author: Greg Mercer (GBear), 27 hours ago 
-WP-3820 Small help text changes
- gsb_feature_image_cta_fpp.features.field_instance.inc | 2 [32m+[m[31m-[m
- gsb_feature_image_cta_fpp.module                      | 2 [32m+[m[31m-[m
- 2 files changed, 2 insertions(+), 2 deletions(-)
-
-https://github.com/gsbitse/./gsb_feature_image_cta_fpp/commit/796a104
-- committer: Meghan Palagyi author: Meghan Palagyi, 5 days ago 
-WP-3736: update the image cta display.
- gsb_feature_image_cta_fpp.ds.inc                   | 31 [32m+++++++++++++[m[31m---------[m
- ...ature_image_cta_fpp.features.field_instance.inc | 18 [32m+++[m[31m----------[m
- gsb_feature_image_cta_fpp.field_group.inc          |  1 [31m-[m
- gsb_feature_image_cta_fpp.strongarm.inc            |  5 [32m+++[m[31m-[m
- 4 files changed, 27 insertions(+), 28 deletions(-)
-
-https://github.com/gsbitse/./gsb_feature_image_cta_fpp/commit/c31d4bd
-- committer: Greg Mercer (GBear) author: Greg Mercer (GBear), 9 days ago 
-WP-3713 Added help text for the image cta
- gsb_feature_image_cta_fpp.module | 23 [32m+++++++++++++++++++++++[m
- 1 file changed, 23 insertions(+)
-
-https://github.com/gsbitse/./gsb_feature_image_cta_fpp/commit/481ea7d
-- committer: Greg Mercer (GBear) author: Greg Mercer (GBear), 9 days ago 
-WP-3713 Field-related changes for image cta
- gsb_feature_image_cta_fpp.features.field_instance.inc | 18 [32m+++++++++[m[31m---------[m
- gsb_feature_image_cta_fpp.module                      |  9 [31m---------[m
- gsb_feature_image_cta_fpp.strongarm.inc               |  2 [32m+[m[31m-[m
- 3 files changed, 10 insertions(+), 19 deletions(-)
-        
-        
-*-----------------------------------------*
-./gsb_feature_week_in_the_life_display
-*-----------------------------------------*
-        
-https://github.com/gsbitse/./gsb_feature_week_in_the_life_display/commit/ca044b1
-- committer: Alexei Gorobets author: Alexei Gorobets, 18 hours ago 
-WP-3752: Add WITL default local task in WITL view to fake a page title for breadcrumbs_by_path to consume.
- gsb_feature_week_in_the_life_display.views_default.inc | 6 [32m++++++[m
- 1 file changed, 6 insertions(+)
-        
-        
-*-----------------------------------------*
 ./gsb_feature_club_display
 *-----------------------------------------*
         
         
         
 *-----------------------------------------*
-./gsb_feature_gsa_search
+./gsb_feature_msx_fellows_ct
 *-----------------------------------------*
         
         
         
 *-----------------------------------------*
-./gsb_feature_club_ct
+./gsb_feature_mega_menu
+*-----------------------------------------*
+        
+        
+        
+*-----------------------------------------*
+./gsb_feature_house_ads_fpp
+*-----------------------------------------*
+        
+        
+        
+*-----------------------------------------*
+./gsb_feature_working_paper_display
+*-----------------------------------------*
+        
+        
+        
+*-----------------------------------------*
+./gsb_feature_week_in_the_life_ct
+*-----------------------------------------*
+        
+        
+        
+*-----------------------------------------*
+./gsb_feature_academic_calendar_display
+*-----------------------------------------*
+        
+        
+        
+*-----------------------------------------*
+./gsb_feature_phd_candidate_display
+*-----------------------------------------*
+        
+        
+        
+*-----------------------------------------*
+./gsb_feature_image_fpp
+*-----------------------------------------*
+        
+        
+        
+*-----------------------------------------*
+./gsb_feature_workbench
+*-----------------------------------------*
+        
+        
+        
+*-----------------------------------------*
+./gsb_feature_working_paper_ct
+*-----------------------------------------*
+        
+        
+        
+*-----------------------------------------*
+./gsb_theme_admin
 *-----------------------------------------*
         
         
@@ -992,12 +998,6 @@ WP-3754: fix pager icon on retina screens.
  css/style.css                    | 1 [31m-[m
  sass/partials/design/_pager.sass | 1 [31m-[m
  2 files changed, 2 deletions(-)
-        
-        
-*-----------------------------------------*
-./gsb_theme_admin
-*-----------------------------------------*
-        
     
     
 !!! status: logs.sh completed.
