@@ -80,8 +80,8 @@ rm -rf gsb_public_logs
 git clone git@github.com:gsbitse/gsb_public_logs.git
 
 cd ${workspace_dir}/gsbpublic
-sh ${workspace_dir}/gsb_public_logs/logs.sh 1000 > ${workspace_dir}/gsb_public_logs/log_out.txt
-sh ${workspace_dir}/gsb_public_logs/logs.sh 10 > ${workspace_dir}/gsb_public_logs/log_10_out.txt
+sh ${workspace_dir}/gsb_public_logs/logs.sh 1000 > ${workspace_dir}/gsb_public_logs/log_out.html
+sh ${workspace_dir}/gsb_public_logs/logs.sh 10 > ${workspace_dir}/gsb_public_logs/log_10_out.html
 
 cd ${workspace_dir}/gsb_public_logs
 
