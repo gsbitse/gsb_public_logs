@@ -17,9 +17,9 @@ function gitlog() {
 
 function messageout() {
   echo "<p>" 
-	echo "    "
-	echo "    "
-	echo "$1"
+  echo "    "
+  echo "    "
+  echo "$1"
   echo "</p>"	
 }
 
