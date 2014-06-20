@@ -9,7 +9,7 @@ function gitlog() {
 	echo "<strong>$1</strong>"
   echo "</br>"  
   echo "==========================================="
-  git config --global alias.lg "log --all --pretty=format:'</br></br><a href="https://github.com/gsbitse/$1/commit/%h%n">view commit</a> - committer: %cn author: %an, %ar</br>%b %n%N'" 
+  git config --global alias.lg "log --all --pretty=format:'</br></br><a href="https://github.com/gsbitse/$1/commit/%h%n">view commit</a> - committer: %cn author: %an, %ar</br>%n%s <code> %b %n%N </code>'" 
   git lg --stat --since=$2.days
   echo "</br>"
   echo "</p>" 
