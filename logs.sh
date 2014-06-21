@@ -6,11 +6,15 @@ function gitlog() {
   echo "<p>"   
   echo "==========================================="
   echo "</br>"  
-	echo "<strong>$1</strong>"
+  echo "<strong>$1</strong>"
   echo "</br>"  
   echo "==========================================="
-  git config --global alias.lg "log --all --pretty=format:'</br></br><a href="https://github.com/gsbitse/$1/commit/%h%n">view commit</a> - committer: %cn author: %an, %ar</br>%n%s <code> %b %n%N </code>'" 
-  git lg --stat --since=$2.days
+  echo "</br>"  
+  git config --global alias.lg "log --all --pretty=format:'<a href="https://github.com/gsbitse/$1/commit/%h%n" view commit</a> - committer: %cn author: %an, %ar %b %n %s %N'" 
+  git lg --stat --since=$2.days > tmp.out
+  tr '\012' '\011' < tmp.out > temp.html
+  sed $'s/\x09/\x3c\\/\x62\x72\x3e/g' temp.html > out.html
+  cat out.html
   echo "</br>"
   echo "</p>" 
 }
