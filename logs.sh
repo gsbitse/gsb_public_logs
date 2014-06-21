@@ -6,14 +6,17 @@ function gitlog() {
   echo "<p>"   
   echo "==========================================="
   echo "</br>"  
-  echo "<strong>$1</strong>"
+	echo "<strong>$1</strong>"
   echo "</br>"  
-  echo "==========================================="
+	echo "==========================================="
   echo "</br>"  
-  git config --global alias.lg "log --all --pretty=format:'<a href="https://github.com/gsbitse/$1/commit/%h%n" view commit</a> - committer: %cn author: %an, %ar %b %n %s %N'" 
-  git lg --stat --since=$2.days > tmp.out
-  tr '\012' '\011' < tmp.out > temp.html
-  sed $'s/\x09/\x3c\\/\x62\x72\x3e/g' temp.html > out.html
+  commitlink="<a href=!https://github.com/gsbitse/$1/commit/%h%n! view commit</a>"
+  git config --global alias.lg "log --all --pretty=format:'$commitlink - committer: %cn author: %an, %ar %b %n %s %N'" 
+  git lg --stat --since=$2.days > tmp1.out
+  sed $'s/\x3d\x21/\x3d\x22/g' tmp1.out > tmp2.out
+  tr '\012' '\011' < tmp2.out > tmp1.out
+  sed $'s/\x09\x21/\x22\x3e/g' tmp1.out > tmp2.out 
+  sed $'s/\x09/\x3c\\/\x62\x72\x3e/g' tmp2.out > out.html
   cat out.html
   echo "</br>"
   echo "</p>" 
