@@ -86,8 +86,9 @@ sh ${workspace_dir}/gsb_public_logs/logs.sh 1 > ${workspace_dir}/gsb_public_logs
 
 cd ${workspace_dir}/gsb_public_logs
 
-git add log_out.txt
-git add log_10_out.txt
+git add log_out.html
+git add log_10_out.html
+git add log_1_out.html
 git commit -m 'Logging complete'
 git push
 
