@@ -92,5 +92,25 @@ git add log_1_out.html
 git commit -m 'Logging complete'
 git push
 
+#########################################################
+# copy the logs over to the gsbitse.github.io web site
+
+rm -rf gsbitse.github.io
+git clone https://github.com/gsbitse/gsbitse.github.io.git
+cp log_out.html gsbitse.github.io/.
+cp log_10_out.html gsbitse.github.io/.
+cp log_1_out.html gsbitse.github.io/.
+cd gsbitse.github.io
+git add log_out.html
+git add log_10_out.html
+git add log_1_out.html
+git commit -m 'New update of logs'
+git push
+
+
+
+
+
+
 
 
