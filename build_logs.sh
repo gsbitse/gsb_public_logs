@@ -97,9 +97,9 @@ git push
 
 rm -rf gsbitse.github.io
 git clone git@github.com:gsbitse/gsbitse.github.io.git
-cp log_out.html gsbitse.github.io/.
-cp log_10_out.html gsbitse.github.io/.
-cp log_1_out.html gsbitse.github.io/.
+cp ${workspace_dir}/gsb_public_logs/log_out.html gsbitse.github.io/.
+cp ${workspace_dir}/gsb_public_logs/log_10_out.html gsbitse.github.io/.
+cp ${workspace_dir}/gsb_public_logs/log_1_out.html gsbitse.github.io/.
 cd gsbitse.github.io
 git add log_out.html
 git add log_10_out.html
