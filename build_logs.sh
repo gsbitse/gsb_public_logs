@@ -9,7 +9,7 @@ distro_url="https://github.com/gsbitse/gsb-distro.git"
 # save the workspace root directory
 
 workspace_dir=$PWD
-branch=$(sh git_current_release.sh)
+branch=$(cat branch_name.txt)
 
 echo '*********** running logs for branch: $branch' 
 
