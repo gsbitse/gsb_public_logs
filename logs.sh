@@ -11,7 +11,7 @@ function gitlog() {
 	echo "==========================================="
   echo "</br>"  
   commitlink="<a href=!https://github.com/gsb-public/$1/commit/%h%n! view commit</a>"
-  git config --global alias.lg "log --all --pretty=format:'$commitlink - committer: %cn author: %an, %ar %b %n %s %N'" 
+  git config --global alias.lg "log --all --pretty=format:'$commitlink - committer: %cn, %cr author: %an, %ar %b %n %s %N'" 
   git lg --stat --since=$2.days > tmp1.out
   sed $'s/\x3d\x21/\x3d\x22/g' tmp1.out > tmp2.out
   tr '\012' '\011' < tmp2.out > tmp1.out
