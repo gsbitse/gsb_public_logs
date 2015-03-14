@@ -11,7 +11,7 @@ distro_url="https://github.com/gsbitse/gsb-distro.git"
 workspace_dir=$PWD
 branch=$(cat branch_name.txt)
 
-echo '*********** running logs for branch: $branch' 
+echo '*********** running logs for branch:' $branch 
 
 ############################################
 # check if the gsb-distro branch exists
