@@ -75,21 +75,16 @@ echo "end drush make"
 ############################################
 # run the logs
 
-cd ${workspace_dir}
-
-rm -rf gsb_public_logs
-git clone git@github.com:gsbitse/gsb_public_logs.git
-
 cd ${workspace_dir}/gsbpublic
 
-sh ${workspace_dir}/gsb_public_logs/logs.sh 1000 > ${workspace_dir}/gsb_public_logs/log_out.html
-sh ${workspace_dir}/gsb_public_logs/logs.sh 10 > ${workspace_dir}/gsb_public_logs/log_10_out.html
-sh ${workspace_dir}/gsb_public_logs/logs.sh 1 > ${workspace_dir}/gsb_public_logs/log_1_out.html
+sh ${workspace_dir}/logs.sh 1000 > ${workspace_dir}/log_out.html
+sh ${workspace_dir}/logs.sh 10 > ${workspace_dir}/log_10_out.html
+sh ${workspace_dir}/logs.sh 1 > ${workspace_dir}/log_1_out.html
 
 #########################################################
 # copy the logs over to the gsbitse.github.io web site
 
-cd ${workspace_dir}/gsb_public_logs
+cd ${workspace_dir}
 
 rm -rf gsbitse.github.io
 git clone git@github.com:gsbitse/gsbitse.github.io.git
@@ -110,11 +105,11 @@ git push
 #########################################################
 # copy the logs over to the gsbitse.github.io web site
 
-cd ${workspace_dir}/gsb_public_logs
+cd ${workspace_dir}
 
-cp ${workspace_dir}/gsb_public_logs/log_out.html gsbitse.github.io/.
-cp ${workspace_dir}/gsb_public_logs/log_10_out.html gsbitse.github.io/.
-cp ${workspace_dir}/gsb_public_logs/log_1_out.html gsbitse.github.io/.
+cp ${workspace_dir}/log_out.html gsbitse.github.io/.
+cp ${workspace_dir}/log_10_out.html gsbitse.github.io/.
+cp ${workspace_dir}/log_1_out.html gsbitse.github.io/.
 
 cd gsbitse.github.io
 
