@@ -78,35 +78,51 @@ echo "end drush make"
 cd ${workspace_dir}
 
 rm -rf gsb_public_logs
-
 git clone git@github.com:gsbitse/gsb_public_logs.git
 
 cd ${workspace_dir}/gsbpublic
+
 sh ${workspace_dir}/gsb_public_logs/logs.sh 1000 > ${workspace_dir}/gsb_public_logs/log_out.html
 sh ${workspace_dir}/gsb_public_logs/logs.sh 10 > ${workspace_dir}/gsb_public_logs/log_10_out.html
 sh ${workspace_dir}/gsb_public_logs/logs.sh 1 > ${workspace_dir}/gsb_public_logs/log_1_out.html
 
+#########################################################
+# copy the logs over to the gsbitse.github.io web site
+
 cd ${workspace_dir}/gsb_public_logs
+
+rm -rf gsbitse.github.io
+git clone git@github.com:gsbitse/gsbitse.github.io.git
+
+cd gsbitse.github.io
+
+echo '' > log_out.html
+echo '' > log_10_out.html
+echo '' > log_1_out.html
 
 git add log_out.html
 git add log_10_out.html
 git add log_1_out.html
-git commit -m 'Logging complete'
+git commit -m 'Clear logs'
+
 git push
 
 #########################################################
 # copy the logs over to the gsbitse.github.io web site
 
-rm -rf gsbitse.github.io
-git clone git@github.com:gsbitse/gsbitse.github.io.git
+cd ${workspace_dir}/gsb_public_logs
+
 cp ${workspace_dir}/gsb_public_logs/log_out.html gsbitse.github.io/.
 cp ${workspace_dir}/gsb_public_logs/log_10_out.html gsbitse.github.io/.
 cp ${workspace_dir}/gsb_public_logs/log_1_out.html gsbitse.github.io/.
+
 cd gsbitse.github.io
+
 git add log_out.html
 git add log_10_out.html
 git add log_1_out.html
 git commit -m 'New update of logs'
+
 git push
 
 
