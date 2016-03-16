@@ -3,23 +3,25 @@
 # run this script from the build directory
 
 function gitlog() {
-  echo "<p>"   
+  echo "<p>"
   echo "==========================================="
-  echo "</br>"  
-	echo "<strong>$1</strong>"
-  echo "</br>"  
-	echo "==========================================="
-  echo "</br>"  
+  echo "</br>"
+  echo "<strong>$1</strong>"
+  echo "</br>"
+  echo "==========================================="
+  echo "</br>"
   commitlink="<a target='_blank' href=!https://github.com/gsb-public/$1/commit/%h%n! view commit</a>"
-  git config --global alias.lg "log --all --pretty=format:'$commitlink - committer: %cn, %cr author: %an, %ar %b %n %s %N'" 
+  git config --global alias.lg "log --all --pretty=format:'$commitlink - committer: %cn, %cr author: %an, %ar %b %n %s %N'"
   git lg --stat --since=$2.days > tmp1.out
-  sed $'s/\x3d\x21/\x3d\x22/g' tmp1.out > tmp2.out
-  tr '\012' '\011' < tmp2.out > tmp1.out
-  sed $'s/\x09\x21/\x22\x3e/g' tmp1.out > tmp2.out 
-  sed $'s/\x09/\x3c\\/\x62\x72\x3e/g' tmp2.out > out.html
+  sed 's/\(WP-[0-9]*\)\(.*\)[^-]*$/<a target=\"_blank\" href=!https:~~stanfordgsb.jira.com~browse~\1\">\1<\/a>\2/' tmp1.out > tmp2.out
+  sed $'s/\x3d\x21/\x3d\x22/g' tmp2.out > tmp3.out
+  tr '\012' '\011' < tmp3.out > tmp1.out
+  sed $'s/\x09\x21/\x22\x3e/g' tmp1.out > tmp2.out
+  tr '\176' '\057' < tmp2.out > tmp3.out
+  sed $'s/\x09/\x3c\\/\x62\x72\x3e/g' tmp3.out > out.html
   cat out.html
   echo "</br>"
-  echo "</p>" 
+  echo "</p>"
 }
 
 function messageout() {
