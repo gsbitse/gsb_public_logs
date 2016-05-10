@@ -64,6 +64,7 @@ mkdir ${workspace_dir}/gsbpublic
 # and then run the drush make
 
 cd ${workspace_dir}/gsbpublic
+git config --global apply.whitespace fix
 
 echo "start drush make"
 
