@@ -78,6 +78,7 @@ echo "end drush make"
 
 cd ${workspace_dir}/gsbpublic
 
+sh ${workspace_dir}/logs.sh 5000 > ${workspace_dir}/log_5000_out.html
 sh ${workspace_dir}/logs.sh 1000 > ${workspace_dir}/log_out.html
 sh ${workspace_dir}/logs.sh 600 > ${workspace_dir}/log_1y_out.html
 sh ${workspace_dir}/logs.sh 10 > ${workspace_dir}/log_10_out.html
@@ -93,11 +94,13 @@ git clone git@github.com:gsbitse/gsbitse.github.io.git
 
 cd gsbitse.github.io
 
+echo '' > log_5000_out.html
 echo '' > log_out.html
 echo '' > log_1y_out.html
 echo '' > log_10_out.html
 echo '' > log_1_out.html
 
+git add log_5000_out.html
 git add log_out.html
 git add log_1y_out.html
 git add log_10_out.html
@@ -111,6 +114,7 @@ git push
 
 cd ${workspace_dir}
 
+cp ${workspace_dir}/log_5000_out.html gsbitse.github.io/.
 cp ${workspace_dir}/log_out.html gsbitse.github.io/.
 cp ${workspace_dir}/log_1y_out.html gsbitse.github.io/.
 cp ${workspace_dir}/log_10_out.html gsbitse.github.io/.
@@ -118,6 +122,7 @@ cp ${workspace_dir}/log_1_out.html gsbitse.github.io/.
 
 cd gsbitse.github.io
 
+git add log_5000_out.html
 git add log_out.html
 git add log_1y_out.html
 git add log_10_out.html
